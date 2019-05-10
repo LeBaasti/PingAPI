@@ -89,7 +89,6 @@ public class DuplexHandler extends ChannelDuplexHandler {
                 ping.setPlayerSample(playerSample);
                 ping.setServerInfo(new ServerData(reply.getProtocolName(), reply.getProtocolVersion()));
                 ping.setFavicon(((CraftIconCache) reply.getIcon()).value);
-                System.out.println("stuff:" + ((CraftIconCache) reply.getIcon()).value);
                 return new PacketStatusOutServerInfo(ping);
 	}
 }
